@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Se Oikea Kaupan etusivu</title>
+    <title>Se Oikea Kauppa</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -13,6 +13,7 @@
             background-color: #f2f2f2;
             padding: 25px;
         }
+
         .text-uppercase {
             letter-spacing: 0.1em;
         }
@@ -44,10 +45,10 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li>
-                    <a class="nav-link" href="#"><img src="icons/person-circle.svg" alt="" width="24" height="24" style="vertical-align: bottom" title="Sinun tilisi"> Sinun tilisi</a>
+                    <a class="nav-link" href="login.php"><img src="icons/person-circle.svg" alt="" width="24" height="24" style="vertical-align: bottom" title="Sinun tilisi"> Sinun tilisi</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#"><img src="icons/bag.svg" alt="" width="24" height="24" style="vertical-align: bottom" title="Ostoskori"> Ostoskori</a>
+                    <a class="nav-link" href="basket.php"><img src="icons/bag.svg" alt="" width="24" height="24" style="vertical-align: bottom" title="Ostoskori"> Ostoskori</a>
                 </li>
             </ul>
         </div>
@@ -86,12 +87,13 @@
             </div>
         </div>
         </div>
-        <p>Se Oikea Kauppa Copyright</p>
-        <form class="form-inline" style="display: inherit"><label>Get deals:</label>
-            <input type="email" class="form-control" size="50" placeholder="Email Address">
-            <button type="button" class="btn btn-danger">Sign Up</button>
-        </form>
-    </footer>
+        <footer>
+            <p>Se Oikea Kauppa Copyright</p>
+            <form class="form-inline" style="display: inherit"><label>Get deals:</label>
+                <input type="email" class="form-control" size="50" placeholder="Email Address">
+                <button type="button" class="btn btn-danger">Sign Up</button>
+            </form>
+        </footer>
 </body>
 
 </html>
