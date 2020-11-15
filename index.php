@@ -22,8 +22,8 @@
 
 <body>
     <div class="jumbotron text-center" style="margin-bottom: 0">
-        <h1>Ensimmäinen bootstrap sivu</h1>
-        <p>Resize this responsive page to see the effect!</p>
+        <h1>Se Oikea Kauppa</h1>
+        <p>Osta tai älä osta</p>
     </div>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
@@ -54,7 +54,8 @@
         </div>
     </nav>
 
-    <div style="height: 300px"></div>
+    <div>
+        <a href="logout.php">Kirjaudu ulos</a></div>
 
     <footer class="container-fluid text-center">
         <div class="bg-gray-100 text-dark-700 py-6">

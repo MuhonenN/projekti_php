@@ -1,10 +1,10 @@
 <?php
-require_once('output.php');
+require_once('functions.php');
 do_html_header('');
 do_html_navbar();
 ?>
-<form method="post" action="isanpaiva.php" class="form-control"> 
-    <div>
+<form method="post" action="member.php" class="form-control">
+    <div class="form-check">
         <h2>Kirjaudu</h2>
         <p><label for="username">Käyttäjätunnus:</label><br>
             <input type="text" name="username" id="username"></p>
@@ -13,7 +13,7 @@ do_html_navbar();
         <button type="submit">Kirjaudu</button><br><br>
         <p><a href="forgot_form.php">Unohtuiko käyttäjätunnus tai salasana?</a></p>
         <p><a href="register.php" class="text-uppercase">Luo tunnus</a></p>
-    </div>
+        </div>
 </form>
 
 <?php
