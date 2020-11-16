@@ -30,4 +30,21 @@ class ProductImage {
 
         return $stmt;
     }
+
+    function readByProductId() {
+        $query = "SELECT id, product_id, name
+                    FROM " . $this->table_name . "
+                    WHERE product_id = ?
+                    ORDER BY name ASC";
+        
+        $stmt = $this->conn->prepare($query);
+
+        $this->product_id=htmlspecialchars(strip_tags($this->product_id));
+
+        $stmt->bindParam(1, $this->product_id);
+
+        $stmt->execute();
+
+        return $stmt;
+    }
 }

@@ -34,7 +34,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="php-shopping-cart-using-sessions-level-1/products.php">Verkkokauppa</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
@@ -48,14 +48,15 @@
                     <a class="nav-link" href="login.php"><img src="icons/person-circle.svg" alt="" width="24" height="24" style="vertical-align: bottom" title="Sinun tilisi"> Sinun tilisi</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="basket.php"><img src="icons/bag.svg" alt="" width="24" height="24" style="vertical-align: bottom" title="Ostoskori"> Ostoskori</a>
+                    <a class="nav-link" href="/php-shopping-cart-using-sessions-level-1/cart.php"><img src="icons/bag.svg" alt="" width="24" height="24" style="vertical-align: bottom" title="Ostoskori"> Ostoskori</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div>
-        <a href="logout.php">Kirjaudu ulos</a></div>
+        <a href="logout.php">Kirjaudu ulos</a>
+    </div>
 
     <footer class="container-fluid text-center">
         <div class="bg-gray-100 text-dark-700 py-6">
@@ -73,15 +74,15 @@
                     <div class="col-lg-4" style="display: flex;justify-content: center;align-items: center;border-right: 1px solid #495057;text-align: left;padding-top: 0;padding-bottom: 0;flex: 0 0 33.33333%;max-width: 33.33333%">
                         <div style=" width: 48px; height: 48px">
                             <img src="icons/cash.svg" alt="" width="45px" height="45px" title="Toimitus">
-                            <h6 class="text-uppercase">Reklamaatio takuu</h6>
-                            <p class="text-muted font-weight-light text-sm mb-0">30 päivän rahat takaisin takuu</p>
+                            <h6 class="text-uppercase">Palautusoikeus</h6>
+                            <p class="text-muted font-weight-light text-sm mb-0">30 päivän palautusoikeus</p>
                         </div>
                     </div>
                     <div class="col-lg-4" style="display: flex;justify-content: center;align-items: center;border-right: 1px solid #495057;text-align: left;padding-top: 0;padding-bottom: 0;flex: 0 0 33.33333%;max-width: 33.33333%">
                         <div style=" width: 48px; height: 48px">
                             <img src="icons/telephone.svg" alt="" width="45px" height="45px" title="Toimitus">
                             <h6 class="text-uppercase">020-100-003</h6>
-                            <p class="text-muted font-weight-light text-sm mb-0">Asiakaspalvelu kellon ympäri</p>
+                            <p class="text-muted font-weight-light text-sm mb-0">Asiakaspalvelua kellon ympäri</p>
                         </div>
                     </div>
                 </div>

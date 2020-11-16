@@ -47,4 +47,41 @@ class Product {
 
         return $rows[0];
     }
+
+    public function readByIds($ids) {
+        $ids_arr = str_repeat('?,', count($ids) - 1) . '?';
+
+        $query = "SELECT id, name, price FROM " . $this->table_name . " WHERE id IN ({$ids_arr}) ORDER BY name";
+
+        $stmt = $this->conn->prepare($query);
+
+        $stmt->execute($ids);
+
+        return $stmt;
+    }
+
+    function readOne() {
+        $query = "SELECT
+                        name, description, price
+                    FROM
+                        " . $this->table_name . "
+                    WHERE
+                        id = ?
+                    LIMIT
+                        0,1";
+
+        $stmt = $this->conn->prepare($query);
+
+        $this->id=htmlspecialchars(strip_tags($this->id));
+
+        $stmt->bindParam(1, $this->id);
+
+        $stmt->execute();
+
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        $this->name = $row['name'];
+        $this->description = $row['description'];
+        $this->price = $row['price'];
+    }
 }
